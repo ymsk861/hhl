@@ -126,8 +126,10 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/japanese-otf-uptex/upn
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/japanese-otf-uptex/upnmlminr-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/japanese-otf-uptex/upnmlminr-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/japanese-otf-uptex/upnmlminr-v.tfm
+OUTPUT 05201564.dvi
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/japanese-otf-uptex/upnmlgothr-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/japanese-otf-uptex/upnmlgothr-h.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
-OUTPUT 05201564.dvi
+INPUT circuit.png
+INPUT circuit.png
 INPUT 05201564.aux

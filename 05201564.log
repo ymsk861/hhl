@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.9.23)  23 DEC 2021 14:22
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.9.23)  6 JAN 2022 13:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -410,54 +410,199 @@ LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 12.
 LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
 (Font)              scaled to size 4.62341pt on input line 12.
-
-./05201564.tex:15: Undefined control sequence.
-l.15 ...ある行列$M$を用いて$\vec{x}\dager
-                                                  M \vec{x}$と表されるよ
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 15.
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
 (Font)              scaled to size 7.39746pt on input line 15.
 LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
 (Font)              scaled to size 5.5481pt on input line 15.
-./05201564.tex:15: Undefined control sequence.
-l.15 ...ゴリズムでは$\vec{x},\vec{x}\dager
-                                                 M \vec{x}$を計算するの
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ [1
 
-./05201564.tex:15: Undefined control sequence.
-l.15 ...子アルゴリズムでは$\vec{x}\dager
-                                                  M \vec{x}$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+]
 LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 19.
+(Font)              scaled to size 11.09619pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 19.
-[1
+(Font)              scaled to size 11.09619pt on input line 52.
 
-] [2] [3] [4] (./05201564.aux) ) 
+
+./05201564.tex:62: LaTeX Error: Cannot determine size of graphic in circuit.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...graphics[width = 0.5texwidth]{circuit.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./05201564.tex:62: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   t
+l.62 ...graphics[width = 0.5texwidth]{circuit.png}
+                                                  
+Dimensions can be in units of em, ex, zw, zh, in, pt, pc,
+cm, mm, dd, cc, bp, H, Q, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./05201564.tex:62: Package calc Error: `t' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...graphics[width = 0.5texwidth]{circuit.png}
+                                                  
+I expected to see one of: + - * / )
+
+./05201564.tex:62: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   t
+l.62 ...graphics[width = 0.5texwidth]{circuit.png}
+                                                  
+Dimensions can be in units of em, ex, zw, zh, in, pt, pc,
+cm, mm, dd, cc, bp, H, Q, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./05201564.tex:62: Package calc Error: `t' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...graphics[width = 0.5texwidth]{circuit.png}
+                                                  
+I expected to see one of: + - * / )
+
+File: circuit.png Graphic file (type eps)
+<circuit.png>
+./05201564.tex:63: Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.63   \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./05201564.tex:63: Extra }, or forgotten \endgroup.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.63   \end{figure}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./05201564.tex:64: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \end{center}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./05201564.tex:64: LaTeX Error: \begin{figure} on input line 61 ended by \end{center}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \end{center}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./05201564.tex:64: Missing } inserted.
+<inserted text> 
+                }
+l.64 \end{center}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./05201564.tex:175: LaTeX Error: \begin{figure} on input line 61 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./05201564.aux)
+./05201564.tex:175: You can't use `\end' in internal vertical mode.
+\enddocument ... \endgroup \deadcycles \z@ \@@end 
+                                                  
+l.175 \end{document}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+./05201564.tex:175: LaTeX Error: \begin{figure} on input line 61 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./05201564.tex:175: Missing } inserted.
+<inserted text> 
+                }
+l.175 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> 05201564.tex
+                
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 5985 strings out of 481134
- 91309 string characters out of 5917333
- 372423 words of memory out of 5000000
- 21969 multiletter control sequences out of 15000+600000
+ 5989 strings out of 481134
+ 91346 string characters out of 5917333
+ 382423 words of memory out of 5000000
+ 21971 multiletter control sequences out of 15000+600000
  543848 words of font info for 85 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 47i,12n,49p,702b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on 05201564.dvi (4 pages, 12020 bytes).
+ 47i,13n,49p,1786b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on 05201564.dvi (1 page, 4192 bytes).

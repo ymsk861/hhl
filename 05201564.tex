@@ -2,29 +2,29 @@
 \usepackage{/Users/yamasakishun/Desktop/ymskarticle}
 
 \begin{document}
-\title{}
+\title{理論演習II Essay}
 \author{05-201564 Shun Yamasaki}
 \date{\today}
 \maketitle
 
-\section{Abstract}
+\section{Abstract (200 words)}
 線形連立一次方程式を解くことは周知の通り様々な場面で非常に重要な問題である。線形連立一次方程式は
 \begin{eqnarray}
   A\vec{x} = \vec{b}
 \end{eqnarray}
-と表される。今回は，$vec{x}$自体を知る必要はないが，ある行列$M$を用いて$\vec{x}\dager M \vec{x}$と表されるような$\vec{x}$に関係した量を求めたい場合を考える。$A$が行あたり最大$s$個のnon-zero成分を持つ$N\times N$の行列であり，条件数(condition number)\footnote{xx}を$\kappa $とすると，知られている最速の古典アルゴリズムでは$\vec{x},\vec{x}\dager M \vec{x}$を計算するのに$N\sqrt{\kappa }$の時間スケールで計算できる。一方，今回紹介する量子アルゴリズムでは$\vec{x}\dager M \vec{x}$
-を$\log(N),\kappa $の多項式時間スケールで計算することができる。これは古典コンピュータに比べて指数関数的なスピードアップである。
+と表される。今回は，$\vec{x}$自体を知る必要はないが，ある行列$M$を用いて$\vec{x}^\dagger M \vec{x}$と表されるような$\vec{x}$に関係した量を求めたい場合を考える。$A$が行あたり最大$s$個のnon-zero成分を持つ$N\times N$の行列であり，条件数(condition number)\footnote{condition numberの説明を入れる}を$\kappa $とすると，知られている最速の古典アルゴリズムでは$\vec{x},\vec{x}^\dagger M \vec{x}$を計算するのに$N\sqrt{\kappa }$の時間スケールで計算できる。
+一方，今回紹介する量子アルゴリズムでは$\vec{b}$に対応する状態$\ket{b}$が用意できた時，残りの$\vec{x}^\dagger M \vec{x}$を$\log(N),\kappa $ を求める計算ステップは多項式時間スケールで計算することができる。これは古典コンピュータに比べて指数関数的なスピードアップである。
 
-\section{Introduction}
-\subsection{Quantum Computer}
+\section{Introduction (1.5-2 pages)}
+% \subsection{Quantum Computer}
 
-量子コンピュータは量子力学を利用して古典コンピュータに実現できない計算を含む計算を実現する装置である。Shorのアルゴリズムのように，ある特定の問題に対しては量子コンピュータは古典コンピュータよりはるかに早い時間で計算できる。この論文では線形連立一次方程式の解の特徴について考えていく。
+量子コンピュータは量子力学を利用し，現状わかっている古典コンピュータによるアルゴリズムでは実現できない計算を含む計算を実現する装置である。Shorのアルゴリズムのように，ある特定の問題に対しては量子コンピュータは古典コンピュータよりはるかに早い時間で計算できる。この論文では線形連立一次方程式の解の特徴について考えていく。
 
-\subsection{Linear Equation}
+% \subsection{Linear Equation}
 
-線形方程式は科学技術・工学においてほぼ全ての分野で応用され，非常に重要であると言える。古典コンピュータでは$N$次の線形方程式を解くのに，一般的に少なくとも$N$オーダーの時間がかかる。
+線形方程式は科学技術・工学においてほぼ全ての分野で応用\footnote{「HHLから引用」と示す}され，非常に重要であると言える。古典コンピュータでは$N$次の線形方程式を解くのに，一般的に少なくとも$N$オーダーの時間がかかる。
 
-\subsection{Overview}
+% \subsection{Overview}
 
 この論文では，特定の場合ではAbstractと同じ方程式
 \begin{eqnarray}
@@ -34,7 +34,7 @@
 
 上の線形方程式と同じ条件で以下，考えていくこととする。まず，$\vec{b}$は抽象的な状態$\ket{b}$の行列表現であると考える。$\vec{b}$と$\ket{b}$が必ずしも等価でないことに注意する。
 
-\subsection{Outline of the article}
+% \subsection{Outline of the article}
 
 以下では，
 \begin{enumerate}
@@ -43,16 +43,51 @@
   \item application
 \end{enumerate}
 
-\subsection{related work}
+% \subsection{related work}
 
 また，related workとして制限付きでの線形操作の例や，非線形微分方程式への拡張の話題がある。
 
 \section{Preliminary}
-何書こうか迷い中
+% これがないと下が読めないものを書く
+\subsection{量子計算の基礎知識}
+量子ビットは量子情報の入れ物の最小単位で，2準位基底では$\ket{0}, \ket{1}$を基底に取り一般の状態$\ket{\psi }$を$\ket{\psi }= \alpha \ket{0}+\beta \ket{1}$のように表すことが多い。ただし，$\alpha, \beta$は複素数の定数で，$|\alpha|^2 + |\beta|^2 = 1$である。
+
+量子レジスタは異なるHilbert spaceに用意された量子ビットを複数並べたもので，ここではテンソル積を用いて$\ket{0}\otimes \ket{1}\otimes \cdots \otimes \ket{1}$のように表すものとする。
+
+量子ゲートは量子レジスタに対する操作のことで，現在の主流な量子コンピュータでは数種類のunitary operatorの組み合わせ(これもunitary operatorになることが知られている)によって望みの状態を実現する。
+
+量子回路は，量子レジスタにゲートを順番にかけていった回路図で，以下の図のように表される。
+\begin{center}
+  \begin{figure}[h]
+      \includegraphics[width = 0.5texwidth]{circuit.png}
+  \end{figure}
+\end{center}
+\subsection{QFT}
+\subsection{QPE}
 
 
-\section{Main Result}
-以下では具体的なアルゴリズムについて紹介する。まず，Ref[3]で，行列$A$を$O(\log(N)s^2t)$をupper boundとする計算量で$\exp(iAt)$で計算することができる。
+
+
+
+
+
+\section{Main Result (1 page)}
+具体的なアルゴリズムの結論のみを掲載する。
+\begin{enumerate}
+  \item Ref[3]によって行列$A$を$e^{iAt}$に変換する。
+  \item Ref[13]によって$\vec{b}$に対応する状態$\ket{b}$を用意する。
+  \item 同様にRef[13]によって$\displaystyle \left|\Psi_{0}\right\rangle:=\sqrt{\frac{2}{T}} \sum_{\tau=0}^{T-1} \sin \frac{\pi\left(\tau+\frac{1}{2}\right)}{T}|\tau\rangle$なる状態$\left|\Psi_{0}\right\rangle$を用意する。
+  \item $\displaystyle \sum_{\tau=0}^{T-1}|\tau\rangle\langle\tau| \otimes e^{i A \tau t_{0} / T}$ (unitary) on $\left|\Psi_{0}\right\rangle \otimes|b\rangle$, where $t_{0}=O(\kappa / \epsilon)$\footnote{epsilonの説明を入れる}のように用意した状態$\ket{b}$および$\left|\Psi_{0}\right\rangle$のテンソル積に対してconditional Hamiltonian evolutionを作用させる。
+  \item first register(initial stateが$\left|\Psi_{0}\right\rangle$のregister)をFourier Transformationする。
+  \item qubitを追加してrotationさせる。
+  \item phase estimationをする。
+  \item last qubitをmeasureする。
+\end{enumerate}
+
+
+
+\section{Details, Discussion (2 page)}
+以下ではMain Result で紹介したアルゴリズムがうまくいく理由について解説する。まず，Ref[3]で，行列$A$を$O(\log(N)s^2t)$をupper boundとする計算量で$\exp(iAt)$で計算することができる。
 
 次に，行列$A$がHermitianかどうかで場合分けをする。
 
@@ -72,56 +107,63 @@ $$
 $$
 を解くことで
 $$
-y=\left(\begin{array}{l}
+\vec{y}=\left(\begin{array}{l}
 0 \\
 \vec{x}
 \end{array}\right)
 $$
 が得られる。このように，$A$がHermitianでない時，$\tilde{A}$を定義して解けるようにする一連の操作をreductionと呼ぶ。
 
-以下では，$A$がHermitianである場合を考える。Ref[13]により，$b_{i}$ and $\sum_{i=i_{1}}^{i_{2}}\left|b_{i}\right|^{2}$ are efficiently computableならstate $\ket{b}$を任意の基底における任意の確率振幅についての重ね合わせに変換できる。ここでは$\ket{b}$を$A$の固有ベクトル(単位ベクトルを選ぶ
+以下では，$A$がHermitianである場合を考える。Ref[13]により，$b_{i}$ and $\sum_{i=i_{1}}^{i_{2}}\left|b_{i}\right|^{2}$ are efficiently computableならstate $\ket{b}$を任意の基底における任意の確率振幅についての重ね合わせに変換できる。ここでは$\ket{b}$を$A$の固有ベクトル(単位ベクトルを選ぶ)をの重ね合わせで表すこととする。確率振幅には，$\vec{b}$の成分を割り当てることを考える。これでまた，$\left|u_{j}\right\rangle$をthe eigenvectors of $A$ , and $\lambda_{j}$をthe corresponding eigenvaluesとして，次を定義する。ここまでで$\ket{b}$が準備できた。
 
 $$
 \left|\Psi_{0}\right\rangle:=\sqrt{\frac{2}{T}} \sum_{\tau=0}^{T-1} \sin \frac{\pi\left(\tau+\frac{1}{2}\right)}{T}|\tau\rangle
 $$
 
-$\sum_{\tau=0}^{T-1}|\tau\rangle\langle\tau| \otimes e^{i A \tau t_{0} / T}$ on $\left|\Psi_{0}\right\rangle \otimes|b\rangle$, where $t_{0}=O(\kappa / \epsilon)$.
+ただし，ここでは$T$は非常に大きな値とする。これで$
+\left|\Psi_{0}\right\rangle$についても準備ができた。このようにして用意した$\ket{b}$および$\left|\Psi_{0}\right\rangle$のテンソル積に対してconditional Hamiltonian evolutionを作用させて
+
+$\sum_{\tau=0}^{T-1}|\tau\rangle\langle\tau| \otimes e^{i A \tau t_{0} / T}$ (unitary) on $\left|\Psi_{0}\right\rangle \otimes|b\rangle$, where $t_{0}=O(\kappa / \epsilon)$\footnote{epsilonの説明を入れる}を考える。ただし，$t_{0}=O(\kappa / \epsilon)$とする。first register(initial stateが$\left|\Psi_{0}\right\rangle$のregister)をFourier Transformationすると，first registerでのstateは
 
 $$
-\sum_{j=1}^{N} \sum_{k=0}^{T-1} \alpha_{k \mid j} \beta_{j}|k\rangle\left|u_{j}\right\rangle,
+\sum_{j=1}^{N} \sum_{k=0}^{T-1} \alpha_{k \mid j} \beta_{j}|k\rangle\left|u_{j}\right\rangle
 $$
 
+となる。$\left|\tilde{\lambda}_{k}\right\rangle$を用いて$\ket{k}$を置き換えて
 
 $$
 \sum_{j=1}^{N} \sum_{k=0}^{T-1} \alpha_{k \mid j} \beta_{j}\left|\tilde{\lambda}_{k}\right\rangle\left|u_{j}\right\rangle
 $$
-Adding a qubit and rotating conditioned on $\left|\tilde{\lambda}_{k}\right\rangle$ yields
+とできる。qubitを追加して$\left|\tilde{\lambda}_{k}\right\rangle$に回転を施して，
+
 $$
 \sum_{j=1}^{N} \sum_{k=0}^{T-1} \alpha_{k \mid j} \beta_{j}\left|\tilde{\lambda}_{k}\right\rangle\left|u_{j}\right\rangle\left(\sqrt{1-\frac{C^{2}}{\tilde{\lambda}_{k}^{2}}}|0\rangle+\frac{C}{\tilde{\lambda}_{k}}|1\rangle\right)
 $$
-where $C$ is chosen to be $O(1 / \kappa) .$ We now undo the phase estimation to uncompute the $\left|\tilde{\lambda}_{k}\right\rangle .$ If the phase estimation were perfect, we would have $\alpha_{k \mid j}=1$ if $\tilde{\lambda}_{k}=\lambda_{j}$, and 0 otherwise. Assuming this for now, we obtain
+
+ただし$C$ は$O(1 / \kappa)$。phase estimationで$\left|\tilde{\lambda}_{k}\right\rangle $を逆算できる。phase estimation がperfectなら，
+
+$\alpha_{k \mid j}=1$ if $\tilde{\lambda}_{k}=\lambda_{j}$, and 0 otherwise
+
+すると，
 $$
 \sum_{j=1}^{N} \beta_{j}\left|u_{j}\right\rangle\left(\sqrt{1-\frac{C^{2}}{\lambda_{j}^{2}}}|0\rangle+\frac{C}{\lambda_{j}}|1\rangle\right)
 $$
-To finish the inversion, we measure the last qubit. Conditioned on seeing 1 , we have the state
+last qubitをmeasureすれば，
 $$
 \sqrt{\frac{1}{\sum_{j=1}^{N} C^{2}\left|\beta_{j}\right|^{2} /\left|\lambda_{j}\right|^{2}} \sum_{j=1}^{N} \beta_{j} \frac{C}{\lambda_{j}}\left|u_{j}\right\rangle}
 $$
+が得られ，これは，$|x\rangle=\sum_{j=1}^{n} \beta_{j} \lambda_{j}^{-1}\left|u_{j}\right\rangle$ に対応。$M$でmeasureすれば$\langle x|M| x\rangle$が得られる。
+%
+% Runtime and error analysis.-We present an informal description of the sources of error; the exact error analysis and runtime considerations are presented in Ref. [12]. Performing the phase estimation is done by simulating $e^{i A t}$. Assuming that $A$ is $s$ sparse, this can be done with error $\epsilon$ in time proportional to $t s^{2}(t / \epsilon)^{o(1)}=: \tilde{O}\left(t s^{2}\right)$.
+%
+% The dominant source of error is phase estimation. This step errs by $O\left(1 / t_{0}\right)$ in estimating $\lambda$, which translates into a relative error of $O\left(1 / \lambda t_{0}\right)$ in $\lambda^{-1}$. If $\lambda \geq 1 / \kappa$, taking $t_{0}=$ $O(\kappa / \epsilon)$ induces a final error of $\epsilon$. Finally, we consider the success probability of the post-selection process. Since $C=O(1 / \kappa)$ and $\lambda \leq 1$, this probability is at least $\Omega\left(1 / \kappa^{2}\right)$. Using amplitude amplification [14], we find
 
 
-which corresponds to $|x\rangle=\sum_{j=1}^{n} \beta_{j} \lambda_{j}^{-1}\left|u_{j}\right\rangle$ up to normalization.
-
-
-\section{Details, Discussion}
-何書こうか迷い中
-
-\section{Conclusion(Summary)}
+\section{Conclusion(Summary) (0.5 page)}
 基本Introと同じ。アルゴリズムと同じ
 
 \section{Appendix}
-Quantum Fourier Transformation(QFT)についてQCQIの内容掲載
 
-Quantum Pase Estimation(QPE)についてQCQIの内容を掲載
 
 \section{Reference}
 HHLとその参考文献
