@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1641444524 "05201564.dvi" "05201564.pdf" "05201564" 1641444525
-  "05201564.dvi" 1641444524 4192 51bbd43a39f742560dae98531b5e9dc1 "latex"
+["dvipdf"] 1641447862 "05201564.dvi" "05201564.pdf" "05201564" 1641447862
+  "05201564.dvi" 1641447862 26036 414d2fc5daa2a18924d07ede5f2ab2a2 "latex"
   (generated)
   "05201564.pdf"
-["latex"] 1641444524 "05201564.tex" "05201564.dvi" "05201564" 1641444525
+["latex"] 1641447861 "05201564.tex" "05201564.dvi" "05201564" 1641447862
   "/Users/yamasakishun/Desktop/ymskarticle.sty" 1640231986 11559 c2147462b0127c8311796206506ffbba ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -17,6 +17,7 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1136768653 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
@@ -40,16 +41,18 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/chemgreek/chemgreek.sty" 1579297960 47530 64600845afa9c25b782d42fa33f66772 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/extarrows/extarrows.sty" 1584654186 1697 06e93f9e60065f4da4f2834dfb6d2fa2 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1548974385 11128 a53805799bebfed6358fc1658a18e41f ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
-  "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvips.def" 1498170935 5895 4b59bd0c17e1116fd6b6e7c683dea655 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def" 1498427493 10299 c742d2190e924996d2f4e34b541cd5e3 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty" 1580683321 7107 12f1c5ba3c6e4a1dde3cb5a3ae4b2cd1 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def" 1580683321 4944 1ddc361527c0bcf3d7b9f9b0c3c28113 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty" 1580683321 16932 04729abe63b66ec59ea56edcd722b058 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty" 1580683321 9067 1b996612394a52e1efe89c8bfe8a5892 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty" 1580683321 2590 e3b24ff953e5b58d924f163d25380312 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty" 1580683321 3976 d7fa7d81d2870d509d25b17d0245e735 ""
-  "/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1584044900 26517 779b9a7592d881e7ea6b8644a68f4f87 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/here/here.sty" 1258935436 439 d908692e0f19922874ccfe2bf35addc7 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def" 1584044900 22137 8b7da88a947f6bb7c387641065b48c80 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty" 1583530354 4625 f233c01a9e9f869c48b3eb2dcc682f06 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1583530354 4603 b6e9cf3ec78d0b12954fd84a4929fb79 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1583530354 84023 c9822972c1af266c100831a7a5793d76 ""
@@ -67,10 +70,12 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1600850974 2441658 6fa8337640123493c427f9a033ef4bec ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "05201564.aux" 1641444524 226 66ca8f98155a43c6919b6bc809c20738 "latex"
-  "05201564.tex" 1641444523 11115 a9421cd72d1cca73bcd9deb81ac5d27a ""
-  "circuit.png" 1641444174 51686 a43f287a9e520b563f2d863590285743 ""
+  "05201564.aux" 1641447862 1631 62a81d197ee6846ca4ea3041cf11b95f "latex"
+  "05201564.tex" 1641447860 16465 163c916c1691a947eef16f6e1c4b66c7 ""
+  "circuit.pdf" 1641446782 31409 4c207de00237eb5822aba48f73faece1 ""
+  "qft.pdf" 1641446764 44712 31442ec17f5d835356524b8eb9373ff2 ""
+  "qpe.pdf" 1641446765 44376 4e33dab668e6fa919147f95887377565 ""
   (generated)
+  "05201564.log"
   "05201564.aux"
   "05201564.dvi"
-  "05201564.log"

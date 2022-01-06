@@ -1,5 +1,6 @@
-\documentclass[b5paper,papersize,fleqn]{jsarticle}
+\documentclass[b5paper,papersize,dvipdfmx,fleqn]{jsarticle}
 \usepackage{/Users/yamasakishun/Desktop/ymskarticle}
+\usepackage{here}
 
 \begin{document}
 \title{理論演習II Essay}
@@ -58,13 +59,91 @@
 
 量子回路は，量子レジスタにゲートを順番にかけていった回路図で，以下の図のように表される。
 \begin{center}
-  \begin{figure}[h]
-      \includegraphics[width = 0.5texwidth]{circuit.png}
+  \begin{figure}[H]
+    \centering
+       \includegraphics[width=0.5\textwidth]{circuit.pdf}
+       \caption{quautum circuitの例(QCQIより引用)}
+       \label{circuit}
   \end{figure}
 \end{center}
-\subsection{QFT}
-\subsection{QPE}
 
+measurementは終状態から情報を読みだす操作である。終状態 $\sum_{k=0}^{2^{n}-1} c_{k}|k\rangle$ から $p_{k}=\left|c_{k}\right|^{2}$を知ることを指し，回路の実行・測定を繰り返し，$0,1, \ldots, 2^{n_{-} 1}$ を得た回数を記録しヒストグラムから$\left\{p_{k}\right\}$を推定する。
+
+\subsection{QFT}
+QFT(Quantum Fourier transformation)は以下のように状態$\ket{j}$を変換する操作である。
+$$
+\begin{aligned}
+|j\rangle & \rightarrow \frac{1}{2^{n / 2}} \sum_{k=0}^{2^{n}-1} e^{2 \pi i j k / 2^{n}}|k\rangle \\
+&=\frac{1}{2^{n / 2}} \sum_{k_{1}=0}^{1} \cdots \sum_{k_{n}=0}^{1} e^{2 \pi i j\left(\sum_{l=1}^{n} k_{l} 2^{-l}\right)}\left|k_{1} \ldots k_{n}\right\rangle \\
+&=\frac{1}{2^{n / 2}} \sum_{k_{1}=0}^{1} \cdots \sum_{k_{n}=0}^{1} \bigotimes_{l=1}^{n} e^{2 \pi i j k_{l} 2^{-l}}\left|k_{l}\right\rangle \\
+&=\frac{1}{2^{n / 2}} \bigotimes_{l=1}^{n}\left[\sum_{k_{l}=0}^{1} e^{2 \pi i j k_{l} 2^{-l}}\left|k_{l}\right\rangle\right] \\
+&=\frac{1}{2^{n / 2}} \bigotimes_{l=1}^{n}\left[|0\rangle+e^{2 \pi i j 2^{-l}}|1\rangle\right] \\
+&=\frac{\left(|0\rangle+e^{2 \pi i 0 . j_{n}}|1\rangle\right)\left(|0\rangle+e^{2 \pi i 0 . j_{n-1} j_{n}}|1\rangle\right) \cdots\left(|0\rangle+e^{2 \pi i 0 . j_{1} j_{2} \cdots j_{n}}|1\rangle\right)}{2^{n / 2}} .
+\end{aligned}
+$$
+% The product representation (5.4) makes it easy to derive an efficient circuit for the quantum Fourier transform. Such a circuit is shown in Figure 5.1. The gate $R_{k}$ denotes the unitary transformation
+% $$
+% R_{k} \equiv\left[\begin{array}{cc}
+% 1 & 0 \\
+% 0 & e^{2 \pi i / 2^{k}}
+% \end{array}\right]
+% $$
+% To see that the pictured circuit computes the quantum Fourier transform, consider what happens when the state $\left|j_{1} \ldots j_{n}\right\rangle$ is input. Applying the Hadamard gate to the first bit produces the state
+% $$
+% \frac{1}{2^{1 / 2}}\left(|0\rangle+e^{2 \pi i 0 . j_{1}}|1\rangle\right)\left|j_{2} \ldots j_{n}\right\rangle
+% $$
+この計算は具体的に，以下のような回路で実現することができる。
+\begin{center}
+  \begin{figure}[H]
+       \includegraphics[width=\textwidth]{qft.pdf}
+       \caption{QFTの例(QCQIより引用)}
+       \label{circuit}
+  \end{figure}
+\end{center}
+\subsection{QPE}
+QPE(Quantum Phase Estimation)は位相を推定するためのアルゴリズムで，QFTを応用して計算する。具体的なアルゴリズムは以下の通りである。
+
+
+Inputs:
+
+ (1) A black box wich performs a controlled- $U^{j}$ operation, for integer $j$
+
+ (2) an eigenstate $|u\rangle$ of $U$ with eigenvalue $e^{2 \pi i \varphi_{u}}$
+
+ (3) $t=n+\left\lceil\log \left(2+\frac{1}{2 \epsilon}\right)\right\rceil$ qubits initialized to $|0\rangle$.
+
+
+Outputs: An $n$-bit approximation $\widetilde{\varphi_{u}}$ to $\varphi_{u} .$
+
+
+Runtime: $O\left(t^{2}\right)$ operations and one call to controlled- $U^{j}$ black box. Succeeds with probability at least $1-\epsilon$.
+
+
+Procedure:
+
+
+1. $|0\rangle|u\rangle$
+
+
+2. $\quad \rightarrow \frac{1}{\sqrt{2^{t}}} \sum_{j=0}^{2^{t}-1}|j\rangle|u\rangle$ create superposition
+
+
+3. $\rightarrow \frac{1}{\sqrt{2^{t}}} \sum_{j=0}^{2^{t}-1}|j\rangle U^{j}|u\rangle$ $=\frac{1}{\sqrt{2^{t}}} \sum_{j=0}^{2^{t}-1} e^{2 \pi i j \varphi_{u}}|j\rangle|u\rangle$ apply black box
+
+
+4. $\quad \rightarrow\left|\widetilde{\varphi_{u}}\right\rangle|u\rangle$ apply inverse Fourier transform
+
+
+5. $\rightarrow \widetilde{\varphi_{u}}$ measure first register
+
+これを量子回路で実現すると以下のようになる。
+\begin{center}
+  \begin{figure}[H]
+       \includegraphics[width=\textwidth]{qpe.pdf}
+       \caption{QPEの例(QCQIより引用)}
+       \label{circuit}
+  \end{figure}
+\end{center}
 
 
 
@@ -72,7 +151,8 @@
 
 
 \section{Main Result (1 page)}
-具体的なアルゴリズムの結論のみを掲載する。
+
+具体的なアルゴリズムを紹介する。
 \begin{enumerate}
   \item Ref[3]によって行列$A$を$e^{iAt}$に変換する。
   \item Ref[13]によって$\vec{b}$に対応する状態$\ket{b}$を用意する。
@@ -83,6 +163,7 @@
   \item phase estimationをする。
   \item last qubitをmeasureする。
 \end{enumerate}
+以上のアルゴリズムによって，$\vec{x}$に関係した量を$\vec{b}$に対応する状態$\ket{b}$が用意できた時，残りの$\vec{x}^\dagger M \vec{x}$を$\log(N),\kappa $ を求める計算ステップは多項式時間スケールで計算することができる。
 
 
 
@@ -160,10 +241,19 @@ $$
 
 
 \section{Conclusion(Summary) (0.5 page)}
-基本Introと同じ。アルゴリズムと同じ
+線形連立方程式$A\vec{x}=\vec{b}$を解くことはあらゆる分野で重要な問題であり，$\vec{x}$自体を知る必要はないが，ある行列$M$を用いて$\vec{x}^\dagger M \vec{x}$と表されるような$\vec{x}$に関係した量を求めたい場合，
+\begin{enumerate}
+  \item 状態$\ket{b}$, $\left|\Psi_{0}\right\rangle$を用意する。
+  \item 行列$A$を$e^{iAt}$に変換し$\displaystyle \sum_{\tau=0}^{T-1}|\tau\rangle\langle\tau| \otimes e^{i A \tau t_{0} / T}$ (unitary) on $\left|\Psi_{0}\right\rangle \otimes|b\rangle$, where $t_{0}=O(\kappa / \epsilon)$とする。
+  \item first register(initial stateが$\left|\Psi_{0}\right\rangle$のregister)をFourier Transformationする。
+  \item qubitを追加してrotationさせる。
+  \item phase estimationをする。
+  \item last qubitをmeasureする。
+\end{enumerate}
+という手順によって$\vec{b}$に対応する状態$\ket{b}$が用意できた時，残りの$\vec{x}^\dagger M \vec{x}$を$\log(N),\kappa $ を求める計算ステップは多項式時間スケールで計算することができる。これは古典的なコンピュータでのわかっている範囲で最も速いアルゴリズムと比較して指数関数的な速度の向上である。
 
 \section{Appendix}
-
+入れる予定なし
 
 \section{Reference}
 HHLとその参考文献
