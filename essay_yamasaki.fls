@@ -115,8 +115,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
 OUTPUT essay_yamasaki.dvi
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT circuit.pdf
-INPUT circuit.pdf
 INPUT qft.pdf
 INPUT qft.pdf
 INPUT qpe.pdf

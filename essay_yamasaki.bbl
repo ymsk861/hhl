@@ -5,15 +5,15 @@ Aram~W. Harrow, Avinatan Hassidim, and Seth Lloyd.
 \newblock {Quantum algorithm for linear systems of equations}.
 \newblock {\em Physical Review Letters}, 103(15):1--8, 2009.
 
-\bibitem{Berry2007}
-Dominic~W. Berry, Graeme Ahokas, Richard Cleve, and Barry~C. Sanders.
-\newblock {Efficient quantum algorithms for simulating sparse hamiltonians}.
-\newblock {\em Communications in Mathematical Physics}, 270(2):359--371, 2007.
-
 \bibitem{Grover2002}
 Lov Grover and Terry Rudolph.
 \newblock {Creating superpositions that correspond to efficiently integrable
   probability distributions}.
 \newblock pages 1--2, 2002.
+
+\bibitem{Berry2007}
+Dominic~W. Berry, Graeme Ahokas, Richard Cleve, and Barry~C. Sanders.
+\newblock {Efficient quantum algorithms for simulating sparse hamiltonians}.
+\newblock {\em Communications in Mathematical Physics}, 270(2):359--371, 2007.
 
 \end{thebibliography}
