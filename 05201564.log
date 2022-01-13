@@ -1,12 +1,12 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.9.23)  6 JAN 2022 14:44
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2020.9.23)  13 JAN 2022 12:12
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **05201564.tex
 (./05201564.tex
-pLaTeX2e <2020-02-02u03>+3 (based on LaTeX2e <2020-02-02> patch level 5)
-L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+pLaTeX2e <2020-02-02>+3 (based on LaTeX2e <2020-02-02> patch level 5)
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2020/02/02 jsclasses (okumura, texjporg)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
@@ -18,20 +18,6 @@ Applying: [2015/01/01] Make \] robust on input line 74.
 LaTeX Info: Redefining \] on input line 75.
 Already applied: [0000/00/00] Make \] robust on input line 83.
 )
-
-/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls:236: Class jsarticle Error: You are running upLaTeX.
-(jsarticle)              Please use pLaTeX instead, or add 'uplatex' to
-(jsarticle)              the class option list.
-
-See the jsarticle class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236       {\@ehc}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 \jsc@mpt=\dimen151
 \jsc@mmm=\dimen152
 \jsc@smallskipamount=\skip47
@@ -39,16 +25,16 @@ LaTeX Info: Redefining \textmc on input line 496.
 LaTeX Info: Redefining \textgt on input line 498.
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY2/mc/m/n --> JY2/gt/m/n on input line 560.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 751.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 751.
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 560.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 751.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 751.
 \fullwidth=\dimen153
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 904.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 904.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 904.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 904.
 \c@part=\count166
 \c@section=\count167
 \c@subsection=\count168
@@ -63,6 +49,7 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 \jsc@tocl@width=\dimen154
 \@lnumwidth=\dimen155
 \bibindent=\dimen156
+
 (/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty
 Package: jslogo 2019/07/25 okumura, texjporg
 LaTeX Info: Redefining \TeX on input line 94.
@@ -70,9 +57,12 @@ LaTeX Info: Redefining \LaTeX on input line 147.
 LaTeX Info: Redefining \LaTeXe on input line 200.
 )
 \heisei=\count174
-) (/Users/yamasakishun/Desktop/ymskarticle.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/ascmac.sty
+)
+(/Users/yamasakishun/Desktop/ymskarticle.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
- (/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/tascmac.sty
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
 \@savetbaselineshift=\dimen157
 \@saveybaselineshift=\dimen158
@@ -91,27 +81,35 @@ Package: tascmac 2020/01/15 v2.1 ascmac package (community edition)
 \@@bwsp=\box70
 \@bcal=\count175
 \shaderule=\dimen162
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: dvipdfmx.def on input line 147.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/mhchem/mhchem.sty
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2018/06/22 v4.08 for typesetting chemical formulae
- (/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2020-03-06 L3 programming layer (loader) 
- (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2020-03-12 L3 backend support: dvipdfmx
 \g__graphics_track_int=\count176
 \l__pdf_internal_box=\box71
 \g__pdf_backend_object_int=\count177
 \g__pdf_backend_annotation_int=\count178
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
@@ -125,21 +123,25 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count181
 \calc@Cskip=\skip52
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen165
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen166
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count182
@@ -179,21 +181,27 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/chemgreek/chemgreek.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2020-03-06 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count194
 \g__xparse_grabber_int=\count195
 \l__xparse_m_args_int=\count196
 \l__xparse_v_nesting_int=\count197
 )
-Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
+ in chemistry (CN)
 \l__chemgreek_tmpa_int=\count198
 \g__chemgreek_tmpa_int=\count199
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 105.
@@ -214,60 +222,30 @@ Package graphics Info: Driver file: dvipdfmx.def on input line 105.
 \mhchem@option@minusmathsidebearingright=\dimen175
 \mhchem@option@minustextsidebearingleft=\dimen176
 \mhchem@option@minustextsidebearingright=\dimen177
-) (/usr/local/texlive/2020/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
-Package: otf 2019/04/01 v1.7b8 psitau, u0.25 ttk
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-
-/usr/local/texlive/2020/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty:52: Package otf Error: You are running upLaTeX.
-(otf)                Please use pLaTeX instead, or add 'uplatex' to
-(otf)                the package option list.
-
-See the otf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 ^^I^^I^^I{\@ehc}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 314.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
-(Font)                  JY2/mc/m/n --> JY2/hmc/m/n on input line 314.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY2/gt/m/n --> JY2/hmc/m/n on input line 314.
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY2/hmc/m/n --> JY2/hmc/bx/n on input line 316.
-LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 317.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
-(Font)                  JY2/gt/m/n --> JY2/hgt/m/n on input line 317.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
-(Font)                  JY2/gt/m/n --> JY2/hgt/m/n on input line 317.
-LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
-(Font)                  JY2/hgt/m/n --> JY2/hgt/bx/n on input line 318.
-(/usr/local/texlive/2020/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
-Package: ajmacros 2019/04/01 21:00 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp>
-\@tempcntc=\count268
-\@tempcntd=\count269
-\@tempcnte=\count270
-\@tempcntf=\count271
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen178
 \Gin@req@width=\dimen179
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip66
-\multirow@cntb=\count272
+\multirow@cntb=\count268
 \multirow@dima=\skip67
 \bigstrutjot=\dimen180
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/extarrows/extarrows.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/extarrows/extarrows.sty
 Package: extarrows 2020/03/12 v1.2.0 Some extensible arrows
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
 \f@nch@headwidth=\skip68
 \f@nch@O@elh=\skip69
 \f@nch@O@erh=\skip70
@@ -277,20 +255,23 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@erf=\skip74
 \f@nch@O@olf=\skip75
 \f@nch@O@orf=\skip76
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box74
 \UL@hyphenbox=\box75
 \UL@skip=\skip77
 \UL@hook=\toks23
 \UL@height=\dimen181
-\UL@pe=\count273
+\UL@pe=\count269
 \UL@pixel=\dimen182
 \ULC@box=\box76
 Package: ulem 2019/11/18
 \ULdepth=\dimen183
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen184
 \ar@mcellbox=\box77
@@ -305,59 +286,31 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \TX@old@col=\dimen188
 \TX@target=\dimen189
 \TX@delta=\dimen190
-\TX@cols=\count274
+\TX@cols=\count270
 \TX@ftn=\toks25
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen191
 \WF@size=\dimen192
-\c@WF@wrappedlines=\count275
+\c@WF@wrappedlines=\count271
 \WF@box=\box79
 \WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/physics/physics.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 )
-/Users/yamasakishun/Desktop/ymskarticle.sty:35: Undefined control sequence.
-<argument> \UnderlineDepth 
-                           
-l.35 \setlength{\UnderlineDepth}{1pt}
-                                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-/Users/yamasakishun/Desktop/ymskarticle.sty:36: Missing number, treated as zero.
-<to be read again> 
-                   \par 
-l.36 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/yamasakishun/Desktop/ymskarticle.sty:36: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \par 
-l.36 
-     
-Dimensions can be in units of em, ex, zw, zh, in, pt, pc,
-cm, mm, dd, cc, bp, H, Q, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-LaTeX Warning: You have requested package `/Users/yamasakishun/Desktop/ymskarticle',
+LaTeX Warning: You have requested package `/Users/yamasakishun/Desktop/ymskarti
+cle',
                but the package provides `mediabb'.
 
 Package: mediabb 2013/03/12 v1.10 iNOUE Koich! <inoue@ma.ns.tcu.ac.jp>
-\c@nombre=\count276
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/here/here.sty) (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+\c@nombre=\count272
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/here/here.sty)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count277
+\c@float@type=\count273
 \float@exts=\toks27
 \float@box=\box80
 \@float@everytoks=\toks28
@@ -386,78 +339,70 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 5.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 5.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 5.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 5.
 
 Package chemgreek Info: Activating mapping `default' on line 5.
 
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 9.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 9.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 9.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 9.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 9.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 9.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 13.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 13.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 16.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 16.
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 16.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 9.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 16.60605pt on input line 9.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 9.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 9.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 9.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 11.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 13.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 16.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 16.
  [1
 
 ]
-LaTeX Font Info:    Font shape `JT2/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 53.
-LaTeX Font Info:    Font shape `JY2/hgt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 53.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 53.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 53.
 File: circuit.pdf Graphic file (type pdf)
 <circuit.pdf>
-LaTeX Font Info:    Font shape `JT2/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 65.
-LaTeX Font Info:    Font shape `JY2/hmc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 65.
- [2]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 65.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 65.
+ [2] [3]
 File: qft.pdf Graphic file (type pdf)
 <qft.pdf>
- [3]
+ [4]
 File: qpe.pdf Graphic file (type pdf)
 <qpe.pdf>
- [4] [5] [6] [7] [8] (./05201564.aux)
+ [5] [6] (./05201564.bbl [7]) [8] (./05201564.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6084 strings out of 481134
- 92772 string characters out of 5917333
- 372633 words of memory out of 5000000
- 22055 multiletter control sequences out of 15000+600000
- 544461 words of font info for 88 fonts, out of 8000000 for 9000
+ 4368 strings out of 481140
+ 70456 string characters out of 5917417
+ 352152 words of memory out of 5000000
+ 20346 multiletter control sequences out of 15000+600000
+ 544687 words of font info for 83 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 47i,12n,49p,1278b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,49p,1511b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 05201564.dvi (8 pages, 26036 bytes).
+Output written on 05201564.dvi (8 pages, 26184 bytes).
