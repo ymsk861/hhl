@@ -1,4 +1,4 @@
-\documentclass[b5paper,papersize,dvipdfmx,fleqn]{jsarticle}
+\documentclass[b5paper,papersize,dvipdfmx,fleqn]{article}
 \usepackage{/Users/yamasakishun/Desktop/ymskarticle}
 \usepackage{here}
 
@@ -9,12 +9,12 @@
 \maketitle
 
 \section{Abstract}
-Solving linear equations is a very important problem in many situations as we know \cite{Harrow2009}. A inear equations is
+Solving linear equations is a very important problem in many situations as we know\cite{Harrow2009}. A inear equations is
 \begin{eqnarray}
   A\vec{x} = \vec{b}.
 \end{eqnarray}
 
-In this paper, we assume that we do not need to know $\vec{x}$ itself, but we want to find a value related to $\vec{x}$ such as $\vec{x}^\dagger M \vec{x}$, where $M$ is a certain matrix. Consider the case where $A$ is a matrix of $N\times N$ with up to $s$ non-zero components per row and the condition number \footnote{condition number is an upper bound on the uncertainty of the solution of a linear equation and is defined as the maximum ratio of the relative error of $x$ divided by the relative error of $b$. It is defined as the maximum ratio of the relative error of $x$ divided by the relative error of $b$.} is $\kappa $, the fastest known classical algorithm can calculate $\vec{x}, \vec{x}^\dagger M\vec{x}$ in a time scale of $N\sqrt{\kappa }$.
+In this paper, we assume that we do not need to know $\vec{x}$ itself, but we want to find a value related to $\vec{x}$ such as $\vec{x}^\dagger M \vec{x}$, where $M$ is a certain matrix. Consider the case where $A$ is a matrix of $N\times N$ with up to $s$ non-zero components per row and the condition number \footnote{condition number is an upper bound on the uncertainty of the solution of a linear equation and is defined as the maximum ratio of the relative error of $x$ divided by the relative error of $b$.} is $\kappa $, the fastest known classical algorithm can calculate $\vec{x}, \vec{x}^\dagger M\vec{x}$ in a time scale of $N\sqrt{\kappa }$.
 On the other hand, in the quantum algorithm presented here, when the state $\ket{b}$ corresponding to $\vec{b}$ is available, the computational steps to find $\ket{x}$ can be computed on a polynomial time scale of $\log(N)$ and $\kappa $. This is an exponential speedup compared to classical computers.
 
 \section{Introduction}

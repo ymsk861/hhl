@@ -1,21 +1,22 @@
 # Fdb version 3
-["bibtex essay_yamasaki"] 1642052214 "essay_yamasaki.aux" "essay_yamasaki.bbl" "essay_yamasaki" 1642052216
+["bibtex essay_yamasaki"] 1642052351 "essay_yamasaki.aux" "essay_yamasaki.bbl" "essay_yamasaki" 1642052450
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "essay_yamasaki.aux" 1642052215 1882 f61b51307ca6117a7b517d046dffeac3 "latex"
+  "essay_yamasaki.aux" 1642052401 1882 1efe059c1bc83befac29524dcd272e5e "latex"
   "ref.bib" 1642038157 27583 4446975de78c1f1772f50db810fafaa1 ""
   (generated)
   "essay_yamasaki.bbl"
   "essay_yamasaki.blg"
-["dvipdf"] 1642052215 "essay_yamasaki.dvi" "essay_yamasaki.pdf" "essay_yamasaki" 1642052216
-  "essay_yamasaki.dvi" 1642052215 23692 f669a53c40bd26b48b99d5e565c36894 "latex"
+["dvipdf"] 1642052401 "essay_yamasaki.dvi" "essay_yamasaki.pdf" "essay_yamasaki" 1642052450
+  "essay_yamasaki.dvi" 1642052401 23492 1650968ac33c9a659d2247bd8ccfc5d6 "latex"
   (generated)
   "essay_yamasaki.pdf"
-["latex"] 1642052214 "essay_yamasaki.tex" "essay_yamasaki.dvi" "essay_yamasaki" 1642052216
+["latex"] 1642052400 "essay_yamasaki.tex" "essay_yamasaki.dvi" "essay_yamasaki" 1642052450
   "/Users/yamasakishun/Desktop/ymskarticle.sty" 1642038752 11274 817a6fef385f95ac24060f01c76d1f39 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/ascmac/ascgrp.tfm" 1520635638 448 9a1f3a95c3a7e2681aa6eefcf410b7ac ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -24,8 +25,6 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
-  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
-  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1136768653 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
@@ -42,7 +41,9 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty" 1523134290 2432 8ff93b1137020e8f21930562a874ae66 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/ascmac.sty" 1579124881 590 834565f4a016952bf667fd346b7aee71 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/tascmac.sty" 1579124881 11463 e16f2fec3bf4db0d4002a155e4cf4467 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls" 1580683321 20023 e427dd9e17e239bf926ef3aab67fe35e ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/base/fleqn.clo" 1580683321 4752 ac0a0eb2cb7ab84995c30c39f1085106 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo" 1580683321 8446 9874cccac5fee462272c582807dbbf56 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/chemgreek/chemgreek.sty" 1579297960 47530 64600845afa9c25b782d42fa33f66772 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/extarrows/extarrows.sty" 1584654186 1697 06e93f9e60065f4da4f2834dfb6d2fa2 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1548974385 11128 a53805799bebfed6358fc1658a18e41f ""
@@ -68,18 +69,16 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty" 1580683321 10216 5efd55f2010055e7b7875afd6a75be82 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty" 1580683321 7148 4ba718200276533b3a293c311a9349e0 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1137111090 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls" 1580683346 60623 359a5f3daadb4509ddbf472557e5a531 ""
-  "/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1564091273 6025 c6eb7b869bc73b37a7116f5af977422f ""
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1600850974 2441658 6fa8337640123493c427f9a033ef4bec ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
   "circuit.pdf" 1641446782 31409 4c207de00237eb5822aba48f73faece1 ""
-  "essay_yamasaki.aux" 1642052215 1882 f61b51307ca6117a7b517d046dffeac3 "latex"
-  "essay_yamasaki.bbl" 1642052214 681 44405ff36dfc19c825f483b98d2c4166 "bibtex essay_yamasaki"
-  "essay_yamasaki.tex" 1642052213 16260 19bb8f0554316d793ab8ed9a2903bede ""
+  "essay_yamasaki.aux" 1642052401 1882 1efe059c1bc83befac29524dcd272e5e "latex"
+  "essay_yamasaki.bbl" 1642052351 681 44405ff36dfc19c825f483b98d2c4166 "bibtex essay_yamasaki"
+  "essay_yamasaki.tex" 1642052450 16155 f4559537f51c1768c90594e3ac27e86c ""
   "qft.pdf" 1641446764 44712 31442ec17f5d835356524b8eb9373ff2 ""
   "qpe.pdf" 1641446765 44376 4e33dab668e6fa919147f95887377565 ""
   (generated)
   "essay_yamasaki.dvi"
-  "essay_yamasaki.log"
   "essay_yamasaki.aux"
+  "essay_yamasaki.log"
